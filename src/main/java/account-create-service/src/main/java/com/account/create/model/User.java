@@ -14,13 +14,13 @@ public class User implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	// @Column(name = "id", updatable = false, nullable = false)
 	private Long id;
 
 	private String firstName;
 	private String lastName;
 	private String email;
 	private int age;
+	private String password;
 
 	public Long getId() {
 		return id;
@@ -61,6 +61,14 @@ public class User implements Serializable {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	@Override
 	public String toString() {
@@ -75,6 +83,8 @@ public class User implements Serializable {
 		builder.append(email);
 		builder.append(", age=");
 		builder.append(age);
+		builder.append(", password=");
+		builder.append(password);
 		builder.append("]");
 		return builder.toString();
 	}
