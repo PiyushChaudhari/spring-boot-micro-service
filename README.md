@@ -10,7 +10,7 @@ How to implement spring boot micro service. Pleases follow below step to impleme
  1.  [Register account create service to eureka server](../../wiki/Register-Account-Create-Service-To-Eureka-Server)
  1.  [Register notification service to eureka server](../../wiki/Register-Notification-Service-To-Eureka-Server)
  1.  [Create zuul gateway](../../wiki/Create-Zuul-Gateway)
- 1.  [Call notification service from account create service](../wiki/Call-Notification-Service-From-Account-Create-Service)
+ 1.  [Call notification service from account create service](../../wiki/Call-Notification-Service-From-Account-Create-Service)
  1.  Run Eureka Server http://localhost:8761
  1.  Run Account Create Service with multiple instance as below: <br>
      `java -jar -Dserver.port=8080 account-create-service-0.0.1-SNAPSHOT.jar` <br>
